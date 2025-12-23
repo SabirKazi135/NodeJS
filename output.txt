@@ -1,0 +1,32 @@
+
+
+===== FILE: ./utils.js =====
+
+function generateRandomnumber() {
+  return Math.floor(Math.random() * 100 + 1);
+}
+
+module.generateRandomnumber;
+
+
+===== FILE: ./package.json =====
+
+{
+  "name": "nodejs",
+  "version": "1.0.0",
+  "description": "Node.js learning",
+  "license": "MIT",
+  "author": "Sabir Kazi",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  }
+}
+
+
+===== FILE: ./index.js =====
+
+const generateRandomnumber = require("./utils");
+
+console.log(`Randome Number: ${generateRandomnumber()}`);
